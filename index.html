@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Sea & Sky apartment: a 35 m² studio on the 7th floor of Kompleksi Bardh e Blu, Shëngjin, Albania. Book on WhatsApp, Booking.com or Google.">
+<meta name="description" content="Sea & Sky apartment: a 35 m² studio 50 m from Shëngjin beach in Kompleksi Bardh e Blu, Albania. Book on WhatsApp, Booking.com or Google.">
 <style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -90,6 +90,9 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
 .cap.br .chips,.cap.tr .chips{justify-content:flex-end}
 .chips span{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .6rem;border:1px solid var(--line);background:var(--glass);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 
+.beach{display:flex;align-items:baseline;justify-content:flex-end;gap:.8rem;margin:.2rem 0 .6rem !important;max-width:none !important}
+.beach b{font-family:var(--display);font-weight:700;font-size:clamp(4rem,12vw,9rem);line-height:.9;color:var(--ink);text-shadow:0 8px 50px rgba(0,0,0,.5)}
+.beach span{font-family:var(--mono);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dusk)}
 .bardh{font-family:var(--display);font-weight:700;font-size:clamp(3rem,13vw,11rem);line-height:.88;letter-spacing:.02em;margin:0;text-shadow:0 8px 60px rgba(0,0,0,.5)}
 .bardh em{font-style:normal;display:block;color:var(--blu)}
 .signplate{display:inline-block;background:var(--plate);color:var(--navy);font-weight:800;padding:.7rem 1.1rem;line-height:1;box-shadow:0 10px 30px rgba(0,0,0,.4)}
@@ -174,11 +177,11 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
 
 <div id="stage" aria-hidden="true">
   <canvas id="scene"></canvas>
-  <div class="ph" id="phComplex"><img src="img/complex.jpg" alt="" style="object-position:62% 55%;transform-origin:62% 55%"></div>
-  <div class="ph" id="phEntrance"><img src="img/entrance.jpg" alt="" style="object-position:37% 41%;transform-origin:37% 41%"></div>
+  <div class="ph" id="phComplex"><img src="complex.jpg" alt="" style="object-position:62% 55%;transform-origin:62% 55%"></div>
+  <div class="ph" id="phEntrance"><img src="entrance.jpg" alt="" style="object-position:37% 41%;transform-origin:37% 41%"></div>
   <div class="ph" id="phRoom">
     <div class="room" id="room">
-      <img src="img/room.jpg" alt="" id="roomImg" style="object-position:50% 50%">
+      <img src="room.jpg" alt="" id="roomImg" style="object-position:50% 50%">
       <div class="hs" data-x="250" data-y="585"><i></i><span>Dining for four</span></div>
       <div class="hs" data-x="640" data-y="430"><i></i><span>Full kitchen</span></div>
       <div class="hs left" data-x="1045" data-y="470"><i></i><span>Private bathroom</span></div>
@@ -189,20 +192,20 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
     <div class="door l" id="doorL"></div>
     <div class="door r" id="doorR"></div>
     <div class="lift" id="lift">
-      <div class="floorbox"><span>▲ KATI</span><b id="floorNum">0</b></div>
+      <div class="floorbox"><span>▲ ▲ ▲</span></div>
       <div class="plate"><small>NR</small><b>42</b></div>
     </div>
   </div>
   <div id="details">
     <div class="cards">
-      <div class="card"><img src="img/kitchen.jpg" alt=""><b>Kitchen</b></div>
-      <div class="card"><img src="img/living.jpg" alt="" style="object-position:40% 50%"><b>Living &amp; dining</b></div>
-      <div class="card"><img src="img/bath.jpg" alt=""><b>Bathroom</b></div>
+      <div class="card"><img src="kitchen.jpg" alt=""><b>Kitchen</b></div>
+      <div class="card"><img src="living.jpg" alt="" style="object-position:40% 50%"><b>Living &amp; dining</b></div>
+      <div class="card"><img src="bath.jpg" alt=""><b>Bathroom</b></div>
     </div>
   </div>
-  <div class="ph" id="phWindow"><img src="img/window.jpg" alt="" style="object-position:54% 52%;transform-origin:54% 52%"></div>
-  <div class="ph" id="phBalcony"><img src="img/balcony.jpg" alt="" style="object-position:45% 45%;transform-origin:45% 45%"></div>
-  <div class="ph" id="phView"><img src="img/view.jpg" alt="" style="object-position:50% 50%;transform-origin:50% 50%"></div>
+  <div class="ph" id="phWindow"><img src="window.jpg" alt="" style="object-position:54% 52%;transform-origin:54% 52%"></div>
+  <div class="ph" id="phBalcony"><img src="balcony.jpg" alt="" style="object-position:45% 45%;transform-origin:45% 45%"></div>
+  <div class="ph" id="phView"><img src="view.jpg" alt="" style="object-position:50% 50%;transform-origin:50% 50%"></div>
   <div class="vign"></div>
   <div class="bar t" id="barT"></div><div class="bar b" id="barB"></div>
   <div class="grain" id="grain"></div>
@@ -212,13 +215,13 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
 <div class="cap tl" data-a="0" data-b="70" style="opacity:1">
   <span class="eyebrow">Shëngjin · Albanian Adriatic</span>
   <h1>Sea<br><span>&amp;</span> Sky</h1>
-  <p>A 35&nbsp;m² studio on the 7th floor of the Bardh e Blu complex, a short walk from Shëngjin beach. Rated 10/10 on Booking.com and 5.0 on Google.</p>
+  <p>A 35&nbsp;m² studio in the Bardh e Blu complex, just <strong style="color:var(--dusk)">50&nbsp;m from Shëngjin beach</strong>. Rated 10/10 on Booking.com and 5.0 on Google.</p>
   <div class="cue">Scroll to fly in</div>
 </div>
 <div class="cap br" data-a="170" data-b="320">
   <span class="eyebrow">41.81° N · 19.59° E</span>
-  <h2>Where the hills meet the Adriatic</h2>
-  <p>The beach is about two minutes on foot. Restaurants, a supermarket, a pharmacy and a bakery are right outside.</p>
+  <p class="beach"><b>50 m</b><span>to the beach</span></p>
+  <p>Step outside and the sand is right there. Restaurants, a supermarket, a pharmacy and a bakery are on the doorstep too.</p>
   <div class="chips"><span>Private beach area</span><span>Tirana airport 50 km</span><span>Airport shuttle</span></div>
 </div>
 <div class="cap bl" data-a="420" data-b="505">
@@ -228,10 +231,10 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
 <div class="cap tr" data-a="545" data-b="615">
   <div class="signplate"><small>SEKSIONI</small><b>C</b></div>
   <h2 style="margin-top:1rem">Your door</h2>
-  <p>Section C, next to the supermarket. Take the elevator to the 7th floor. Free parking on site.</p>
+  <p>Section C, next to the supermarket, 50&nbsp;m from the beach. Elevator inside and free parking on site.</p>
 </div>
 <div class="cap bl" data-a="800" data-b="930">
-  <span class="eyebrow">Nr 42 · 7th floor</span>
+  <span class="eyebrow">Inside Nr 42</span>
   <h2>One bright room</h2>
   <p>Sleeping area, kitchen and dining table in 35&nbsp;m², with a private bathroom behind the door.</p>
 </div>
@@ -245,12 +248,12 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
   <h2>Green hills over the sink</h2>
 </div>
 <div class="cap br" data-a="1215" data-b="1295">
-  <span class="eyebrow">The balcony · 7th floor</span>
+  <span class="eyebrow">The balcony</span>
   <h2>Glassed in, facing the mountains</h2>
   <p>Two chairs, a small table, and mountain, garden and city views.</p>
 </div>
 <div class="cap bl" data-a="1325" data-b="1400">
-  <span class="eyebrow">From the 7th floor</span>
+  <span class="eyebrow">From the balcony</span>
   <h2>Shëngjin below you</h2>
   <p>Shops, cafés and the beach are all within easy walking distance.</p>
 </div>
@@ -280,6 +283,7 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
       <label for="gu">Guests<select id="gu"><option value="1">1</option><option value="2" selected>2</option></select></label>
     </div>
     <div class="summary" id="sum">—</div>
+    <div class="chips" style="margin-top:0"><span>50 m from the beach</span><span>Free parking</span><span>Air conditioning</span></div>
     <a class="ch wa" id="waLink" href="https://wa.me/355676467377" target="_blank" rel="noopener">
       <svg><use href="#i-chat"/></svg><span><b>Message us on WhatsApp</b><small>Fastest reply · book direct with the host</small></span>
     </a>
@@ -294,7 +298,7 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
       <div><small>Check-in</small>10:00 – 23:00</div>
       <div><small>Check-out</small>08:00 – 09:00</div>
     </div>
-    <p class="addr">Kompleksi Bardh e Blu, Section C, Nr 42, 7th floor · Shëngjin, Albania<br>Hosts speak English and Italian.</p>
+    <p class="addr">Kompleksi Bardh e Blu, Section C, Nr 42 · Shëngjin, Albania · 50 m from the beach<br>Hosts speak English and Italian.</p>
   </form>
 </div>
 
@@ -363,7 +367,7 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
     for(let i=0;i<d.data.length;i+=4){const v=Math.random()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}
     g.putImageData(d,0,0);$('grain').style.backgroundImage='url('+c.toDataURL()+')';})();
 
-  const CH=[['Sky',0],['Arrival',400],['Entrance',525],['7th floor',660],['Inside',770],['Window',1105],['Book',1420]];
+  const CH=[['Sky',0],['Arrival',400],['Entrance',525],['Nr 42',660],['Inside',770],['Window',1105],['Book',1420]];
   const rail=$('rail');
   CH.forEach(([n,s],i)=>{const b=document.createElement('button');b.type='button';b.innerHTML='<span>'+String(i+1).padStart(2,'0')+' '+n+'</span><i></i>';
     b.addEventListener('click',()=>scrollTo({top:(i===CH.length-1?1640:s+(i?25:0))*VH,behavior:'smooth'}));rail.appendChild(b);});
@@ -743,7 +747,7 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
   function onResize(){VH=innerHeight/100;placeHotspots();if(three)three.resize();readScroll();}
   addEventListener('resize',onResize); onResize(); S=target;
 
-  const els={canvas:$('scene'),complex:$('phComplex'),entrance:$('phEntrance'),room:$('phRoom'),roomIn:$('room'),doors:$('doors'),doorL:$('doorL'),doorR:$('doorR'),lift:$('lift'),floorNum:$('floorNum'),
+  const els={canvas:$('scene'),complex:$('phComplex'),entrance:$('phEntrance'),room:$('phRoom'),roomIn:$('room'),doors:$('doors'),doorL:$('doorL'),doorR:$('doorR'),lift:$('lift'),
     details:$('details'),win:$('phWindow'),bal:$('phBalcony'),view:$('phView'),barT:$('barT'),barB:$('barB'),alt:$('alt'),chap:$('chap'),dock:$('dock')};
   const img=el=>el.firstElementChild;
   let lastChap=-1;
@@ -757,7 +761,7 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
     if(three&&o3>0.001){
       const y=S<800?three.render('A',seg(0,400),0):three.render('J',seg(1420,1650),seg(1400,1500));
       els.alt.textContent='ALT '+Math.max(0,Math.round(y-1))+' m';
-    }else els.alt.textContent=S<660?'ALT 0 m':'KATI 7';
+    }else els.alt.textContent=S<660?'ALT 0 m':'NR 42';
 
     els.complex.style.opacity=win(408,510,30);
     img(els.complex).style.transform=par(14)+'scale('+(1.06+.22*eio(seg(378,530))).toFixed(4)+')';
@@ -771,7 +775,6 @@ body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:
     els.doorR.style.transform='translateX('+(op*101)+'%)';
     els.lift.style.opacity=win(672,716,14);
     els.lift.style.transform='translateX(-50%) translateY('+(-(seg(660,720))*24).toFixed(1)+'px)';
-    els.floorNum.textContent=Math.min(7,Math.floor(seg(664,706)*8));
     els.room.style.opacity=clamp((S-690)/10)*(1-seg(948,968));
     const rs=1.28-.28*eout(seg(714,800))+.07*seg(800,960);
     els.roomIn.style.transform=par(16)+'translateX('+(-2.5*seg(800,960)).toFixed(2)+'%) scale('+rs.toFixed(4)+')';
